@@ -1,146 +1,128 @@
 🏬 Superstore Sales Data Analysis
 
-This project presents an in-depth data analysis of Superstore Sales data, aimed at uncovering patterns in customer behavior, sales trends, and profit performance across multiple dimensions such as region, category, and gender.
-It leverages statistical analysis, Tableau visualization, and clustering techniques to derive actionable business insights.
+This project presents an in-depth data analysis of a Superstore Sales dataset, focusing on understanding customer behavior, sales performance, profit margins, and key business insights through statistical and visual analysis.
 
-📁 Project Structure
-Superstore-Sales-Analysis/
-│
-├── 📂 data/
-│   ├── Superstore_Sales.csv        # Raw dataset
-│   └── cleaned_data.csv            # Preprocessed dataset
-│
-├── 📂 notebooks/
-│   ├── descriptive_analysis.ipynb  # Exploratory & statistical analysis
-│   └── clustering_analysis.ipynb   # Cluster segmentation & insights
-│
-├── 📂 visualizations/
-│   ├── sales_profit_per_state.png
-│   ├── category_sales_boxplot.png
-│   ├── gender_quantity_segment.png
-│   ├── subcategory_sales_gender.png
-│   └── treemap_category_state.png
-│
-├── 📜 report/
-│   └── Superstore_Sales_Report.pdf  # Full analytical report (SPSS + Tableau)
-│
-├── 📄 README.md
-└── 📄 requirements.txt
+📊 Project Overview
 
-📊 Dataset Overview
+The dataset used in this project contains 250 customer records with 12 key variables describing sales transactions across different U.S. states and regions. The analysis explores patterns, relationships, and clusters to derive actionable business insights.
 
-The dataset consists of 250 customer records with 12 variables:
+📁 Dataset Information
 
-Variable	Description
-Ship Mode	Type of delivery (First Class, Standard, Second Class, Same Day)
-Customer Name	Name of the customer
-Gender	Male / Female
-Segment	Consumer, Corporate, or Home Office
-State / Region	U.S. state and its corresponding region
-Category / Sub-Category	Product category and its sub-classification
-Sales	Sales amount (USD)
-Quantity	Units sold
-Discount	Discount applied (%)
-Profit	Profit per order (USD)
-⚙️ Tools & Technologies
-Tool	Purpose
-Tableau	Visualization and dashboard creation
-SPSS	Statistical and T-Test analysis
-Python (Pandas, NumPy, Matplotlib)	Data cleaning and clustering
-Excel	Data preparation and verification
-🔍 Analyses Performed
+Columns in the dataset:
+
+Ship Mode: Delivery type (First Class, Standard Class, Second Class, Same Day)
+
+Customer Name: Name of the customer
+
+Gender: Male/Female
+
+Segment: Market type (Consumer, Corporate, Home Office)
+
+State & Region: U.S. state and geographical region (West, East, Central, South)
+
+Category / Sub-Category: Product category and its sub-classification
+
+Sales: Sales value in USD
+
+Quantity: Units ordered
+
+Discount: Discount applied (%)
+
+Profit: Profit generated per order
+
+⚙️ Tools & Technologies Used
+
+Python / SPSS: For descriptive statistics and inferential analysis
+
+Tableau: For interactive data visualization
+
+Excel: For data preparation and validation
+
+🔍 Key Analyses Performed
 1. Descriptive Statistics
 
-Computed mean, standard deviation, and variance for key measures.
+Calculated mean, median, standard deviation, and variance for key metrics (Sales, Profit, Quantity).
 
-Sales Mean: $275.12 | Profit Mean: $18.32
+Identified substantial variation in sales and profits.
 
-High variability in sales and profit distribution, with smaller deviations in quantity ordered.
+Observed that Standard Class is the most common shipping mode and male customers generally contribute more sales.
 
 2. Data Visualization
-Quantity Purchased by Gender and Segment
 
-Men tend to purchase more products in Consumer and Corporate segments. “Standard Class” shipping is the most preferred.
+Sales & Profit per State: Revealed geographical disparities (e.g., California high sales but low profits).
 
-Sales and Profit per State
+Category-wise & Subcategory-wise Analysis: Highlighted Technology as a high-performing category.
 
-New York and California have the highest sales volumes, though California shows lower profit margins due to operational costs.
+Gender-based Purchases: Males purchase more paper, females prefer binders; possible marketing implications.
 
-Sales by Product Category Across States
-
-Technology leads in sales volume, followed by Office Supplies and Furniture. California and New York dominate across all categories.
-
-Sub-Category Sales by Gender
-
-Men buy more paper (highly profitable), while women prefer binders. Profitability varies across sub-categories.
-
-Category-Wise Sales Distribution
-
-Technology shows the largest spread in revenue and dominates average sales values.
+Box Plots & Tree Maps: Illustrated distribution of revenue and sales concentration by category/state.
 
 3. T-Test Analysis
 
-Compared Sales and Discounts across genders.
+Compared Sales and Discounts between genders.
 
-Result: No significant statistical difference (p > 0.05).
+Found no significant statistical difference (p > 0.05) between male and female sales patterns.
 
-Indicates similar spending patterns between male and female customers.
+Suggested that sales differences could be due to chance rather than gender-based trends.
 
 4. Factor Analysis (PCA)
 
-Variables: Sales, Category, Gender, Discount, Segment
+Analyzed five key variables: Sales, Category, Gender, Discount, Segment.
 
-First two components explained ~46% variance.
+Found moderate correlation but low KMO score, suggesting limited suitability for factor analysis.
 
-Sales and Category are the most influential features.
-
-Suggests moderate correlation; PCA reveals primary patterns of variation.
+Identified Sales and Category as dominant components influencing variance.
 
 5. Cluster Analysis
-Cluster	Characteristics	Interpretation
-1	High sales, high profit	Premium transactions
-2	Average sales & profit	Regular transactions
-3	Low sales, moderate profit	Small-scale customers
-4	High sales, negative profit	Loss-making operations
 
-Clusters reveal business opportunities: focus on Cluster 1 for growth, investigate Cluster 4 for cost reduction.
+Applied clustering on Sales, Profit, Ship Mode, Segment, Category, Region.
+
+Formed 4 clusters showing distinct transaction patterns:
+
+Cluster 1: Highly profitable transactions
+
+Cluster 4: Loss-making transactions
+
+Cluster 2 & 3: Average, common transactions
+
+Highlighted potential business actions—reduce losses in Cluster 4, focus growth on Cluster 1.
 
 📈 Key Insights
 
-Technology category drives most revenue and profit.
+High variability in sales and profit across regions and customers.
 
-Standard shipping is the dominant, cost-effective mode.
+Technology category dominates sales and profit share.
 
-Regional performance shows uneven profit distribution.
+Standard shipping is the most popular and cost-effective mode.
 
-No gender-based performance difference.
+No major gender bias in overall sales performance.
 
-Clustering helps segment customers by profitability and operational characteristics.
+Cluster-based segmentation helps identify profitable and non-performing customer groups.
 
-🧠 Business Recommendations
+🧠 Business Implications
 
-Focus on Technology category and optimize Standard Class logistics.
+Focus marketing efforts on Technology products and Standard Class shipping promotions.
 
-Investigate loss clusters to reduce operational inefficiencies.
+Address loss clusters by revisiting pricing or operational costs.
 
-Strengthen marketing in high-sales, low-profit regions.
+Leverage regional insights (e.g., high sales but low profit areas) to optimize strategy.
 
-Introduce targeted promotions by sub-category and customer type.
+Use PCA-driven variable selection for targeted predictive modeling in future work.
 
-🚀 Future Enhancements
+📌 Future Scope
 
-Integrate predictive models (e.g., regression, classification) for sales forecasting.
+Incorporate predictive modeling for profit forecasting.
 
-Expand dataset to improve PCA and clustering robustness.
+Enhance data volume for more robust factor and cluster analysis.
 
-Develop a Tableau or Power BI dashboard for real-time business insights.
+Build a dashboard integrating Tableau visuals for real-time decision-making.
 
-👤 Author
+📄 Author
 
 Author: [Your Name]
-Tools: Tableau | SPSS | Excel | Python
-Purpose: Academic / Business Analytics Research
+Tools Used: Tableau, SPSS, Excel
+Purpose: Academic/Business Analytics Research
 
 🪪 License
 
-This project is licensed under the MIT License — feel free to use, modify, and distribute with proper attribution.
+This project is released under the MIT License – feel free to use, modify, and share with attribution.
