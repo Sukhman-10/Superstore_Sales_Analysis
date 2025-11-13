@@ -2,36 +2,6 @@
 
 This project presents an in-depth analysis of Superstore Sales data, uncovering patterns in customer behavior, sales trends, and profit performance across multiple dimensions such as region, category, and gender. It leverages statistical analysis, Tableau visualization, and clustering techniques to derive actionable business insights.
 
----
-
-## 📁 Project Structure
-
-Superstore-Sales-Analysis/
-│
-├── 📂 data/
-│ ├── Superstore_Sales.csv # Raw dataset
-│ └── cleaned_data.csv # Preprocessed dataset
-│
-├── 📂 notebooks/
-│ ├── descriptive_analysis.ipynb # Exploratory & statistical analysis
-│ └── clustering_analysis.ipynb # Cluster segmentation & insights
-│
-├── 📂 visualizations/
-│ ├── sales_profit_per_state.png
-│ ├── category_sales_boxplot.png
-│ ├── gender_quantity_segment.png
-│ ├── subcategory_sales_gender.png
-│ └── treemap_category_state.png
-│
-├── 📂 report/
-│ └── Superstore_Sales_Report.pdf # Full analytical report
-│
-├── 📄 README.md
-└── 📄 requirements.txt
-
-
----
-
 ## 📊 Dataset Overview
 
 The dataset consists of 250 customer records with 12 variables:
