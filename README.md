@@ -41,19 +41,19 @@ The dataset consists of 250 customer records with 12 variables:
 
 ### 2. Data Visualization
 - **Quantity Purchased by Gender and Segment**  
-  ![Gender vs Quantity](visualizations/gender_quantity_segment.png)
+  ![Gender vs Quantity]
 
 - **Sales and Profit per State**  
-  ![Sales Profit per State](visualizations/sales_profit_per_state.png)
+  ![Sales Profit per State]
 
 - **Sales by Product Category Across States**  
-  ![Category Sales Boxplot](visualizations/category_sales_boxplot.png)
+  ![Category Sales Boxplot]
 
 - **Sub-Category Sales by Gender**  
-  ![Subcategory Sales Gender](visualizations/subcategory_sales_gender.png)
+  ![Subcategory Sales Gender]
 
 - **Category-Wise Sales Distribution (Treemap)**  
-  ![Treemap Category State](visualizations/treemap_category_state.png)
+  ![Treemap Category State]
 
 ### 3. T-Test Analysis
 - Compared Sales and Discounts across genders.  
